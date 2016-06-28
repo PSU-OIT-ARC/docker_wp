@@ -14,7 +14,7 @@ services:
   wordpress:
     depends_on:
       - db
-    image: conwayb/docker_wp
+    build: .
     links:
       - db
     ports:
